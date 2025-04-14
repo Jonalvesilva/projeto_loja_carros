@@ -31,7 +31,10 @@ export default function MultipleBanner(props: Props) {
         }}
         allowTouchMove={false}
         navigation={false}
-        className="mySwiper h-[25vh] sm:h-[30vh] md:h-[35vh] lg:h-[50vh] xl:h-[70vh]"
+        className="mySwiper h-[25vh] sm:h-[30vh] md:h-[35vh] lg:h-[50vh] xl:h-[75vh]"
+        style={{
+          maxHeight: `${props.maxHeight}px`,
+        }}
       >
         {props.url?.map((urlItem) => (
           <SwiperSlide key={`${urlItem}_key`}>

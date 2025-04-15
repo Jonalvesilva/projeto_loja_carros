@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 
 type Props = {
   url?: string[];
-  backdrop?: { active: boolean; percent: Number; hexcolor: string };
+  backdrop?: { active: boolean; percent: number; hexcolor: string };
   children?: React.ReactNode;
   maxHeight: number;
 };
@@ -73,7 +73,7 @@ export default function MultipleBanner(props: Props) {
   );
 }
 
-function hexToRgb(hex: string, opacity?: any) {
+function hexToRgb(hex: string, opacity?: number) {
   hex = hex.replace("#", "");
 
   if (hex.length === 3) {

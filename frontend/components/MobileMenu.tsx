@@ -19,10 +19,8 @@ export default function MobileMenu() {
       </SheetTrigger>
       <SheetContent className="bg-white">
         <SheetHeader>
-          <SheetTitle>Edit profile</SheetTitle>
-          <SheetDescription>
-            Make changes to your profile here. Click save when you're done.
-          </SheetDescription>
+          <SheetTitle>BestAuto</SheetTitle>
+          <SheetDescription>Menu Description</SheetDescription>
         </SheetHeader>
         <SheetFooter>
           <SheetClose asChild></SheetClose>
